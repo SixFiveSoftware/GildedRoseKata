@@ -46,4 +46,21 @@ class NormalItemTests: XCTestCase {
         XCTAssertEqual(mongoose.sellIn, expectedSellIn)
         XCTAssertEqual(mongoose.quality, expectedQuality)
     }
+    
+    func testTwoDays() {
+        // given
+        let expectedSellIn = 3
+        let expectedQuality = 5
+        
+        // when
+        gildedRose.updateQuality()
+        gildedRose.updateQuality()
+        let mongoose = items[2]
+        
+        // then
+        XCTAssertEqual(mongoose.sellIn, expectedSellIn)
+        XCTAssertEqual(mongoose.quality, expectedQuality)
+    }
+    
+
 }
