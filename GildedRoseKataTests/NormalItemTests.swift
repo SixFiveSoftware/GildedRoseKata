@@ -73,7 +73,22 @@ class NormalItemTests: XCTestCase {
         }
         let mongoose = items[2]
         
+        // then
         XCTAssertEqual(mongoose.sellIn, expectedSellIn)
+        XCTAssertEqual(mongoose.quality, expectedQuality)
+    }
+
+    func testQualityNeverGoesBelowZero() {
+        // given
+        let expectedQuality = 0
+        
+        // when
+        for _ in 1...50 {
+            gildedRose.updateQuality()
+        }
+        let mongoose = items[2]
+        
+        // then
         XCTAssertEqual(mongoose.quality, expectedQuality)
     }
 
