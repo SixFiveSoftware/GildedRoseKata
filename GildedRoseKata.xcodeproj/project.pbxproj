@@ -19,6 +19,7 @@
 		20B72CD51B49B0DC00AD5345 /* BackstagePassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CD41B49B0DC00AD5345 /* BackstagePassesTests.swift */; };
 		20B72CD81B49B22300AD5345 /* ConjuredItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CD71B49B22300AD5345 /* ConjuredItemsTests.swift */; };
 		20B72CDA1B49C42300AD5345 /* SulfurasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CD91B49C42300AD5345 /* SulfurasTests.swift */; };
+		20B72CDE1B49EE5B00AD5345 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CDD1B49EE5B00AD5345 /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		20B72CD41B49B0DC00AD5345 /* BackstagePassesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackstagePassesTests.swift; sourceTree = "<group>"; };
 		20B72CD71B49B22300AD5345 /* ConjuredItemsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConjuredItemsTests.swift; sourceTree = "<group>"; };
 		20B72CD91B49C42300AD5345 /* SulfurasTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SulfurasTests.swift; sourceTree = "<group>"; };
+		20B72CDD1B49EE5B00AD5345 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				20B72CAB1B48E35300AD5345 /* AppDelegate.swift */,
 				20B72CAD1B48E35300AD5345 /* ViewController.swift */,
 				20B72CCB1B48E50B00AD5345 /* GildedRose.swift */,
+				20B72CDD1B49EE5B00AD5345 /* Items.swift */,
 				20B72CCC1B48E50B00AD5345 /* ReadMe.txt */,
 				20B72CAF1B48E35300AD5345 /* Main.storyboard */,
 				20B72CB21B48E35300AD5345 /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B72CDE1B49EE5B00AD5345 /* Items.swift in Sources */,
 				20B72CAE1B48E35300AD5345 /* ViewController.swift in Sources */,
 				20B72CCD1B48E50B00AD5345 /* GildedRose.swift in Sources */,
 				20B72CAC1B48E35300AD5345 /* AppDelegate.swift in Sources */,

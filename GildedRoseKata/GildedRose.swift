@@ -33,6 +33,17 @@ var items = [
 class GildedRose {
     
     func updateQuality() {
+
+        for item in items {
+            switch item.name {
+                case let name where name == "+5 Dexterity Vest" || name == "Elixir of the Mongoose":
+                Normal(item: item).updateQuality()
+            default:
+                break
+            }
+        }
+
+        /*
         for(var i = 0; i < items.count; i++ ) {
             if (items[i].name != "Aged Brie" && items[i].name != "Backstage passes to a TAFKAL80ETC concert")
             {
@@ -107,5 +118,6 @@ class GildedRose {
                 }
             }
         }
+        */
     }
 }
