@@ -15,6 +15,7 @@
 		20B72CCD1B48E50B00AD5345 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CCB1B48E50B00AD5345 /* GildedRose.swift */; };
 		20B72CCE1B48E50B00AD5345 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20B72CCC1B48E50B00AD5345 /* ReadMe.txt */; };
 		20B72CD11B48E59200AD5345 /* NormalItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CD01B48E59200AD5345 /* NormalItemTests.swift */; };
+		20B72CD31B49A15500AD5345 /* AgedBrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B72CD21B49A15500AD5345 /* AgedBrieTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		20B72CCC1B48E50B00AD5345 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		20B72CCF1B48E59100AD5345 /* GildedRoseKataTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GildedRoseKataTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		20B72CD01B48E59200AD5345 /* NormalItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalItemTests.swift; sourceTree = "<group>"; };
+		20B72CD21B49A15500AD5345 /* AgedBrieTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgedBrieTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				20B72CC21B48E35300AD5345 /* Info.plist */,
 				20B72CD01B48E59200AD5345 /* NormalItemTests.swift */,
 				20B72CCF1B48E59100AD5345 /* GildedRoseKataTests-Bridging-Header.h */,
+				20B72CD21B49A15500AD5345 /* AgedBrieTests.swift */,
 			);
 			path = GildedRoseKataTests;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B72CD31B49A15500AD5345 /* AgedBrieTests.swift in Sources */,
 				20B72CD11B48E59200AD5345 /* NormalItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +405,7 @@
 				20B72CC71B48E35300AD5345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20B72CC81B48E35300AD5345 /* Build configuration list for PBXNativeTarget "GildedRoseKataTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				20B72CCA1B48E35300AD5345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
