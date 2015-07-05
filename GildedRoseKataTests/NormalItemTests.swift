@@ -62,5 +62,19 @@ class NormalItemTests: XCTestCase {
         XCTAssertEqual(mongoose.quality, expectedQuality)
     }
     
+    func testQualityDegradesTwiceAsFastAfterSellInDate() {
+        // given
+        let expectedSellIn = -1
+        let expectedQuality = 0
+
+        // when
+        for _ in 1...6 {
+            gildedRose.updateQuality()
+        }
+        let mongoose = items[2]
+        
+        XCTAssertEqual(mongoose.sellIn, expectedSellIn)
+        XCTAssertEqual(mongoose.quality, expectedQuality)
+    }
 
 }
