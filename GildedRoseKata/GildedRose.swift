@@ -41,6 +41,10 @@ class GildedRose {
                     if (items[i].name != "Sulfuras, Hand of Ragnaros")
                     {
                         items[i].quality = items[i].quality - 1
+                        
+                        if items[i].name == "Conjured Mana Cake" {
+                            items[i].quality = items[i].quality - 1
+                        }
                     }
                 }
             }
