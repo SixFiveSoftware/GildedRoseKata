@@ -8,16 +8,20 @@
 
 import Foundation
 
-class Normal {
+class BaseItem {
     var item: Item
     
     init(item: Item) {
         self.item = item
     }
     
-    func updateQuality() {
+    func updateQuality(functionToAdjustQuality f : (Void -> Void)?) {
         item.sellIn--
-        item.quality = (item.sellIn < 0) ? item.quality - 2 : item.quality - 1
+        f?()
+        verifyQualityInBounds()
+    }
+    
+    func verifyQualityInBounds() {
         if item.quality > 50 {
             item.quality = 50
         }
@@ -27,21 +31,20 @@ class Normal {
     }
 }
 
-class AgedBrie {
-    var item: Item
-    
-    init(item: Item) {
-        self.item = item
-    }
+class Normal : BaseItem {
     
     func updateQuality() {
-        item.sellIn--
-        item.quality = (item.sellIn < 0) ? item.quality + 2 : item.quality + 1
-        if item.quality > 50 {
-            item.quality = 50
+        super.updateQuality {
+            self.item.quality = (self.item.sellIn < 0) ? self.item.quality - 2 : self.item.quality - 1
         }
-        if item.quality < 0 {
-            item.quality = 0
+    }
+}
+
+class AgedBrie : BaseItem {
+    
+    func updateQuality() {
+        super.updateQuality {
+            self.item.quality = (self.item.sellIn < 0) ? self.item.quality + 2 : self.item.quality + 1
         }
     }
 }
