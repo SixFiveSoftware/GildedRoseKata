@@ -15,7 +15,7 @@ class BaseItem {
         self.item = item
     }
     
-    func updateQuality(functionToAdjustQuality f : (Void -> Void)?) {
+    private func updateQuality(functionToAdjustQuality f : (Void -> Void)?) {
         item.sellIn--
         f?()
         verifyQualityInBounds()
@@ -45,6 +45,26 @@ class AgedBrie : BaseItem {
     func updateQuality() {
         super.updateQuality {
             self.item.quality = (self.item.sellIn < 0) ? self.item.quality + 2 : self.item.quality + 1
+        }
+    }
+}
+
+class BackstagePass : BaseItem {
+    
+    func updateQuality() {
+        super.updateQuality { 
+            switch self.item.sellIn {
+            case 0...4:
+                self.item.quality += 3
+            case 5...9:
+                self.item.quality += 2
+            default:
+                self.item.quality++
+            }
+            
+            if self.item.sellIn < 0 {
+                self.item.quality = 0
+            }
         }
     }
 }

@@ -40,6 +40,8 @@ class GildedRose {
                 Normal(item: item).updateQuality()
             case "Aged Brie":
                 AgedBrie(item: item).updateQuality()
+            case let name where name.hasPrefix("Backstage"):
+                BackstagePass(item: item).updateQuality()
             default:
                 break
             }
