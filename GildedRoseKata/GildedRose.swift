@@ -42,6 +42,8 @@ class GildedRose {
                 AgedBrie(item: item).updateQuality()
             case let name where name.hasPrefix("Backstage"):
                 BackstagePass(item: item).updateQuality()
+            case let name where name.hasPrefix("Conjured"):
+                ConjuredItem(item: item).updateQuality()
             default:
                 break
             }

@@ -52,7 +52,7 @@ class AgedBrie : BaseItem {
 class BackstagePass : BaseItem {
     
     func updateQuality() {
-        super.updateQuality { 
+        super.updateQuality() {
             switch self.item.sellIn {
             case 0...4:
                 self.item.quality += 3
@@ -65,6 +65,15 @@ class BackstagePass : BaseItem {
             if self.item.sellIn < 0 {
                 self.item.quality = 0
             }
+        }
+    }
+}
+
+class ConjuredItem : BaseItem {
+    
+    func updateQuality() {
+        super.updateQuality() {
+            self.item.quality -= 2
         }
     }
 }
