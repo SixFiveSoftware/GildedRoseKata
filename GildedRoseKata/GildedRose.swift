@@ -36,8 +36,10 @@ class GildedRose {
 
         for item in items {
             switch item.name {
-                case let name where name == "+5 Dexterity Vest" || name == "Elixir of the Mongoose":
+            case let name where name == "+5 Dexterity Vest" || name == "Elixir of the Mongoose":
                 Normal(item: item).updateQuality()
+            case "Aged Brie":
+                AgedBrie(item: item).updateQuality()
             default:
                 break
             }
